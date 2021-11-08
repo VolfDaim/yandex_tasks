@@ -8,13 +8,20 @@ class Point:
 
 
 def figure(a: Point, b: Point, c: Point, d: Point):
+    """
+
+    :param a:
+    :param b:
+    :param c:
+    :param d:
+    :return:
+    """
     points = [a, b, c, d]
     points = sorted(points, key=lambda point: point.x)
     if angle_len(points[0], points[1]) == angle_len(points[2], points[3]):
         return 'YES'
 
     return 'NO'
-
 
 def angle_len(a: Point, b: Point):
     if b.x - a.x == 0:
