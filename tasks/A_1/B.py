@@ -24,7 +24,7 @@ def figure(a: Point, b: Point, c: Point, d: Point):
     return 'NO'
 
 def angle_len(a: Point, b: Point):
-    if b.x - a.x == 0:
+    if b.x == a.x:
         return sqrt((b.x - a.x) ** 2 + (b.y - a.y) ** 2)
     else:
         return (b.y - a.y) / (b.x - a.x), sqrt((b.x - a.x) ** 2 + (b.y - a.y) ** 2)
